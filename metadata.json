@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "hillmanniklas@gmail.com",
+                "Name": "Nixerii"
+            }
+        ],
+        "Category": "Fun and Games",
+        "Description": "A KDE plugin for adding and playing gifs on the desktop.",
+        "Icon": "about_kde",
+        "Id": "com.nixerii.gifframes",
+        "License": "GPL-3.0",
+        "Name": "GifFrames",
+        "Version": "1.0.0",
+        "Website": "https://github.com/n1xerii/com.nixerii.gifframes"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
