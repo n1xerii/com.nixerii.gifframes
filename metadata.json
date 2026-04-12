@@ -6,7 +6,7 @@
                 "Name": "Nixerii"
             }
         ],
-        "Category": "Fun and Games",
+        "Category": "Graphics",
         "Description": "A KDE plugin for adding and playing gifs on the desktop.",
         "Icon": "about_kde",
         "Id": "com.nixerii.gifframes",
