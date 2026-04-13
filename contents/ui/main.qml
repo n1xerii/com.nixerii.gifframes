@@ -8,7 +8,7 @@ import org.kde.plasma.core as PlasmaCore
 PlasmoidItem {
     id: widget
 
-    Plasmoid.icon: 'folder-image-symbolic'
+    Plasmoid.icon: 'image-gif'
 
     width: 100
     height: 100
