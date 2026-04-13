@@ -8,15 +8,26 @@ import org.kde.plasma.core as PlasmaCore
 Item {
     id: compact
 
-    PlasmaComponents.Button {
-        id: showButton
-        text: "🖼️"
-        font.bold: true
-        font.pixelSize: parent.width / 2
-        x: 0
-        y: 0
+    AnimatedImage {
+        id: gif
+
         width: parent.width
         height: parent.height
+
+        source: plasmoid.configuration.gifPath
+        playing: true
+
+        //onAccepted: {
+        //    widget.expanded = !widget.expanded
+        //}
+    }
+
+    PlasmaComponents.Button {
+        id: popupButton
+
+        width: parent.width
+        height: parent.height
+        opacity: 0
 
         onClicked: {
             widget.expanded = !widget.expanded
