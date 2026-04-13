@@ -8,7 +8,7 @@
         ],
         "Category": "Graphics",
         "Description": "A KDE plugin for adding and playing gifs on the desktop.",
-        "Icon": "about_kde",
+        "Icon": "image-gif",
         "Id": "com.nixerii.gifframes",
         "License": "GPL-3.0",
         "Name": "GifFrames",
