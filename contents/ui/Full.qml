@@ -15,6 +15,7 @@ Item {
         height: parent.height
 
         source: plasmoid.configuration.gifPath
+        speed: plasmoid.configuration.gifSpeed
         playing: true
     }
 }
