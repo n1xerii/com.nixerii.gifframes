@@ -7,7 +7,7 @@
             <default></default>
         </entry>
         <entry name="gifSpeed" type="Real">
-            <default></default>
+            <default>1.0</default>
         </entry>
     </group>
 </kcfg>
