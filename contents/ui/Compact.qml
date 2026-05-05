@@ -16,10 +16,6 @@ Item {
 
         source: plasmoid.configuration.gifPath
         playing: true
-
-        //onAccepted: {
-        //    widget.expanded = !widget.expanded
-        //}
     }
 
     PlasmaComponents.Button {
