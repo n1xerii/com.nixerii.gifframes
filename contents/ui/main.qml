@@ -13,6 +13,15 @@ PlasmoidItem {
     width: 100
     height: 100
 
+    Plasmoid.backgroundHints: getBackground()
+
     compactRepresentation: Compact {}
     fullRepresentation: Full {}
+
+    function getBackground() {
+        if (plasmoid.configuration.noBackground) {
+            return PlasmaCore.Types.NoBackground
+        }
+        return PlasmaCore.Types.TranslucentBackground
+    }
 }

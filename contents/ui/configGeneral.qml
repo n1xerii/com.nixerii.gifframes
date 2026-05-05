@@ -7,6 +7,7 @@ Kirigami.FormLayout {
 
     property alias cfg_gifPath: gifPath.text
     property alias cfg_gifSpeed: gifSpeed.value
+    property alias cfg_noBackground: noBackground.checked
 
     Kirigami.Separator {
         Kirigami.FormData.isSection: true
@@ -46,5 +47,18 @@ Kirigami.FormLayout {
         onClicked: {
             gifSpeed.value = 1.0
         }
+    }
+
+
+    Kirigami.Separator {
+        Kirigami.FormData.isSection: true
+        Kirigami.FormData.label: i18n("Background")
+    }
+
+
+    QQC2.CheckBox {
+        id: noBackground
+
+        Kirigami.FormData.label: i18n("Transparent:")
     }
 }
