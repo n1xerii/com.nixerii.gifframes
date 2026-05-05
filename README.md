@@ -1,2 +1,2 @@
 # GIFFRAMES
- A KDE plugin for adding and playing gifs on the desktop.
+ A KDE Plasma widget for adding and playing gifs on the desktop.
