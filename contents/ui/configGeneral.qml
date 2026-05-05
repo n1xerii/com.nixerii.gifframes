@@ -10,14 +10,22 @@ Kirigami.FormLayout {
 
     Kirigami.Separator {
         Kirigami.FormData.isSection: true
-        Kirigami.FormData.label: i18n("GIF Settings")
+        Kirigami.FormData.label: i18n("Path")
     }
+
 
     QQC2.TextField {
         id: gifPath
         Kirigami.FormData.label: i18n("GIF Path:")
         placeholderText: i18n("path/to/some.gif")
     }
+
+
+    Kirigami.Separator {
+        Kirigami.FormData.isSection: true
+        Kirigami.FormData.label: i18n("Speed")
+    }
+
 
     QQC2.Slider {
         id: gifSpeed
@@ -28,10 +36,13 @@ Kirigami.FormLayout {
 
         Kirigami.FormData.label: i18n("GIF Speed:")
     }
+
     QQC2.Button {
         id: resetDefaultSpeedButton
 
         text: qsTr("Reset")
+        Kirigami.FormData.label: i18n(gifSpeed.value.toFixed(1))
+
         onClicked: {
             gifSpeed.value = 1.0
         }
