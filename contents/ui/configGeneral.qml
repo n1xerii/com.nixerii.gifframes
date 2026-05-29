@@ -7,6 +7,7 @@ Kirigami.FormLayout {
 
     property alias cfg_gifPath: gifPath.text
     property alias cfg_gifSpeed: gifSpeed.text
+    property alias cfg_gifPaused: gifPause.checked
     property alias cfg_noBackground: noBackground.checked
 
     Kirigami.Separator {
@@ -37,6 +38,12 @@ Kirigami.FormLayout {
         onClicked: {
             gifSpeed.text = "1.0"
         }
+    }
+
+    QQC2.CheckBox {
+        id: gifPause
+
+        Kirigami.FormData.label: i18n("Paused:")
     }
 
 
