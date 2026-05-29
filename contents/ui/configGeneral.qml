@@ -11,22 +11,14 @@ Kirigami.FormLayout {
 
     Kirigami.Separator {
         Kirigami.FormData.isSection: true
-        Kirigami.FormData.label: i18n("Path")
+        Kirigami.FormData.label: i18n("Playback")
     }
-
 
     QQC2.TextField {
         id: gifPath
         Kirigami.FormData.label: i18n("GIF Path:")
         placeholderText: i18n("path/to/some.gif")
     }
-
-
-    Kirigami.Separator {
-        Kirigami.FormData.isSection: true
-        Kirigami.FormData.label: i18n("Speed")
-    }
-
 
     QQC2.TextField {
         id: gifSpeed
