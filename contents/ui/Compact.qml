@@ -16,7 +16,7 @@ Item {
 
         source: plasmoid.configuration.gifPath
         speed: parseFloat(plasmoid.configuration.gifSpeed) || 1.0
-        playing: true
+        playing: !plasmoid.configuration.gifPaused
     }
 
     PlasmaComponents.Button {
