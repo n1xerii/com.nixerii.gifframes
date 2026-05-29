@@ -8,6 +8,7 @@ Kirigami.FormLayout {
     property alias cfg_gifPath: gifPath.text
     property alias cfg_gifSpeed: gifSpeed.text
     property alias cfg_gifPaused: gifPause.checked
+
     property alias cfg_noBackground: noBackground.checked
 
     Kirigami.Separator {
@@ -28,7 +29,6 @@ Kirigami.FormLayout {
 
         Kirigami.FormData.label: i18n("GIF Speed:")
     }
-
     QQC2.Button {
         id: gifResetSpeed
 
@@ -49,7 +49,7 @@ Kirigami.FormLayout {
 
     Kirigami.Separator {
         Kirigami.FormData.isSection: true
-        Kirigami.FormData.label: i18n("Background")
+        Kirigami.FormData.label: i18n("Appearance")
     }
 
 
