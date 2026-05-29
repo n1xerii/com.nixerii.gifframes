@@ -10,6 +10,9 @@ Kirigami.FormLayout {
     property alias cfg_gifPaused: gifPause.checked
 
     property alias cfg_noBackground: noBackground.checked
+    property alias cfg_gifFlipH: gifFlipH.checked
+    property alias cfg_gifFlipV: gifFlipV.checked
+
 
     Kirigami.Separator {
         Kirigami.FormData.isSection: true
@@ -52,6 +55,16 @@ Kirigami.FormLayout {
         Kirigami.FormData.label: i18n("Appearance")
     }
 
+    QQC2.CheckBox {
+        id: gifFlipH
+
+        Kirigami.FormData.label: i18n("Flip Horizontally:")
+    }
+    QQC2.CheckBox {
+        id: gifFlipV
+
+        Kirigami.FormData.label: i18n("Flip Vertically:")
+    }
 
     QQC2.CheckBox {
         id: noBackground
