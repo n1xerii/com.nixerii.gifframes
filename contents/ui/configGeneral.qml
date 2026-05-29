@@ -29,7 +29,7 @@ Kirigami.FormLayout {
     }
 
     QQC2.Button {
-        id: resetDefaultSpeedButton
+        id: gifResetSpeed
 
         text: qsTr("Reset")
         Kirigami.FormData.label: i18n(gifSpeed.value.toFixed(1))
