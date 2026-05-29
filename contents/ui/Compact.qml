@@ -13,6 +13,7 @@ Item {
 
         width: parent.width
         height: parent.height
+        opacity: parseFloat(plasmoid.configuration.gifOpacity) || 1.0
 
         source: plasmoid.configuration.gifPath
         speed: parseFloat(plasmoid.configuration.gifSpeed) || 1.0

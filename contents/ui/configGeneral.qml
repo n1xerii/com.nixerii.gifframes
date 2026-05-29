@@ -9,6 +9,7 @@ Kirigami.FormLayout {
     property alias cfg_gifSpeed: gifSpeed.text
     property alias cfg_gifPaused: gifPause.checked
 
+    property alias cfg_gifOpacity: gifOpacity.text
     property alias cfg_noBackground: noBackground.checked
     property alias cfg_gifFlipH: gifFlipH.checked
     property alias cfg_gifFlipV: gifFlipV.checked
@@ -21,6 +22,7 @@ Kirigami.FormLayout {
 
     QQC2.TextField {
         id: gifPath
+
         Kirigami.FormData.label: i18n("GIF Path:")
         placeholderText: i18n("path/to/some.gif")
     }
@@ -29,7 +31,6 @@ Kirigami.FormLayout {
         id: gifSpeed
 
         placeholderText: i18n("default: 1.0")
-
         Kirigami.FormData.label: i18n("GIF Speed:")
     }
     QQC2.Button {
@@ -38,7 +39,7 @@ Kirigami.FormLayout {
         text: qsTr("Reset")
 
         onClicked: {
-            gifSpeed.text = "1.0"
+            gifSpeed.text = i18n("1.0")
         }
     }
 
@@ -53,6 +54,7 @@ Kirigami.FormLayout {
         Kirigami.FormData.isSection: true
         Kirigami.FormData.label: i18n("Appearance")
     }
+
 
     QQC2.CheckBox {
         id: gifFlipH
@@ -69,5 +71,20 @@ Kirigami.FormLayout {
         id: noBackground
 
         Kirigami.FormData.label: i18n("Transparent:")
+    }
+    QQC2.TextField {
+        id: gifOpacity
+
+        placeholderText: i18n("default: 1.0")
+        Kirigami.FormData.label: i18n("Opacity:")
+    }
+    QQC2.Button {
+        id: gifResetOpacity
+
+        text: qsTr("Reset")
+
+        onClicked: {
+            gifOpacity.text = i18n("1.0")
+        }
     }
 }
