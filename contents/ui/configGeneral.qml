@@ -9,10 +9,11 @@ Kirigami.FormLayout {
     property alias cfg_gifSpeed: gifSpeed.text
     property alias cfg_gifPaused: gifPause.checked
 
-    property alias cfg_gifOpacity: gifOpacity.text
-    property alias cfg_noBackground: noBackground.checked
+    property alias cfg_gifFillMode: gifFillMode.currentIndex
     property alias cfg_gifFlipH: gifFlipH.checked
     property alias cfg_gifFlipV: gifFlipV.checked
+    property alias cfg_noBackground: noBackground.checked
+    property alias cfg_gifOpacity: gifOpacity.text
 
 
     Kirigami.Separator {
@@ -56,6 +57,10 @@ Kirigami.FormLayout {
     }
 
 
+    QQC2.ComboBox {
+        id: gifFillMode
+        model: ["Stretch (default)", "PreserveAspectFit", "PreserveAspectCrop", "Tile", "TileVertically", "TileHorizontally"]
+    }
     QQC2.CheckBox {
         id: gifFlipH
 

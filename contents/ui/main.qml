@@ -24,4 +24,30 @@ PlasmoidItem {
         }
         return PlasmaCore.Types.TranslucentBackground
     }
+
+    function setFillMode() {
+        switch (plasmoid.configuration.gifFillMode) {
+            case 0:
+                return Image.Stretch;
+                break;
+            case 1:
+                return Image.PreserveAspectFit;
+                break;
+            case 2:
+                return Image.PreserveAspectCrop;
+                break;
+            case 3:
+                return Image.Tile;
+                break;
+            case 4:
+                return Image.TileVertically;
+                break;
+            case 5:
+                return Image.TileHorizontally;
+                break;
+            default:
+                return Image.Stretch;
+                break;
+        }
+    }
 }

@@ -19,6 +19,7 @@ Item {
         speed: parseFloat(plasmoid.configuration.gifSpeed) || 1.0
         playing: !plasmoid.configuration.gifPaused
 
+        fillMode: widget.setFillMode()
         mirror: plasmoid.configuration.gifFlipH
         mirrorVertically: plasmoid.configuration.gifFlipV
     }
