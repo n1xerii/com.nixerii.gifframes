@@ -36,7 +36,6 @@ Kirigami.FormLayout {
         id: gifResetSpeed
 
         text: qsTr("Reset")
-        Kirigami.FormData.label: i18n(gifSpeed.value.toFixed(1))
 
         onClicked: {
             gifSpeed.text = "1.0"
