@@ -6,7 +6,7 @@
         <entry name="gifPath" type="String">
             <default></default>
         </entry>
-        <entry name="gifSpeed" type="Real">
+        <entry name="gifSpeed" type="String">
             <default>1.0</default>
         </entry>
         <entry name="noBackground" type="Bool">

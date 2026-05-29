@@ -6,7 +6,7 @@ Kirigami.FormLayout {
     id: page
 
     property alias cfg_gifPath: gifPath.text
-    property alias cfg_gifSpeed: gifSpeed.value
+    property alias cfg_gifSpeed: gifSpeed.text
     property alias cfg_noBackground: noBackground.checked
 
     Kirigami.Separator {
@@ -28,12 +28,10 @@ Kirigami.FormLayout {
     }
 
 
-    QQC2.Slider {
+    QQC2.TextField {
         id: gifSpeed
 
-        from: 0.1
-        value: 1.0
-        to: 2.0
+        placeholderText: i18n("default: 1.0")
 
         Kirigami.FormData.label: i18n("GIF Speed:")
     }
@@ -45,7 +43,7 @@ Kirigami.FormLayout {
         Kirigami.FormData.label: i18n(gifSpeed.value.toFixed(1))
 
         onClicked: {
-            gifSpeed.value = 1.0
+            gifSpeed.text = "1.0"
         }
     }
 
