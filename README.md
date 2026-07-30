@@ -1,5 +1,5 @@
 # VIDEO SCREEN
-A better, newer and more updated widget with gif support:  
+A better and newer widget with gif support:  
 https://github.com/n1xerii/com.nixerii.videoscreen
 
 KDE STORE:  
